@@ -100,7 +100,16 @@ index 7b75ff884..21e875cd2 100644
  
    #
    # SMBIOS Support
-@@ -427,6 +448,7 @@
+@@ -403,6 +424,7
+  #
+  # Video support
+  #
+  OvmfPkg/QemuRamfbDxe/QemuRamfbDxe.inf
++  OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf
+  OvmfPkg/VirtioGpuDxe/VirtioGpu.inf
+  OvmfPkg/PlatformDxe/Platform.inf
+   
+@@ -427,6 +449,7 @@
  !if $(TPM2_CONFIG_ENABLE) == TRUE
    SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigDxe.inf
  !endif
