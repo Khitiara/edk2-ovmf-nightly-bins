@@ -100,7 +100,7 @@ index 7b75ff884..21e875cd2 100644
  
    #
    # SMBIOS Support
-@@ -427,6 +448,7 @@
+@@ -403,6 +424,7 @@
   #
   # Video support
   #
