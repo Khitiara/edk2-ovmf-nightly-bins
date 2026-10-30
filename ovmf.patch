@@ -101,13 +101,13 @@ index 7b75ff884..21e875cd2 100644
    #
    # SMBIOS Support
 @@ -403,6 +424,7 @@
-  #
-  # Video support
-  #
-  OvmfPkg/QemuRamfbDxe/QemuRamfbDxe.inf
+   #
+   # Video support
+   #
+   OvmfPkg/QemuRamfbDxe/QemuRamfbDxe.inf
 +  OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf
-  OvmfPkg/VirtioGpuDxe/VirtioGpu.inf
-  OvmfPkg/PlatformDxe/Platform.inf
+   OvmfPkg/VirtioGpuDxe/VirtioGpu.inf
+   OvmfPkg/PlatformDxe/Platform.inf
 @@ -427,6 +449,7 @@
  !if $(TPM2_CONFIG_ENABLE) == TRUE
    SecurityPkg/Tcg/Tcg2Config/Tcg2ConfigDxe.inf
@@ -254,6 +254,7 @@ index e039810dc..e2c00c10b 100644
 +#include <Uefi/UefiSpec.h>
  
 +#include <Library/ArmMmuLib.h>
+ #include <Library/ArmCcaInitPeiLib.h>
  #include <Library/BaseLib.h>
  #include <Library/BaseMemoryLib.h>
  #include <Library/MemoryAllocationLib.h>
@@ -320,6 +321,7 @@ index 731d94033..8710a0071 100644
  
  [LibraryClasses]
 +  ArmMmuLib
+   ArmCcaInitPeiLib
    BaseLib
    BaseMemoryLib
    DebugLib
